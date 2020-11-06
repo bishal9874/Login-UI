@@ -14,6 +14,7 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
+  TextEditingController numController = new TextEditingController();
   // final List<List<String>> products = [
   //   [
   //     "assets/photo-1551622966-357737ef2797.jpg",
@@ -217,7 +218,9 @@ class _HomeViewState extends State<HomeView> {
                           ),
                            
                            TextFormField(
+                             controller: numController,
                         decoration: InputDecoration(
+
                       filled: true,
                       fillColor: Colors.grey[200],
                       prefixIcon: Icon(
